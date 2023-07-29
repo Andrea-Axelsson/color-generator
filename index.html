@@ -1,43 +1,49 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Color Scheme Generator</title>
-    </head>
-    <body>
-        <div class="container"> 
-            <header>
-                    <form>
-                        <input type="color" name="color" id="color" class="color">
-                        <div class="custom-select">
-                            <select name="mode" id="mode" class="mode">
-                                    <option value="monochrome">Monochrome</option>
-                                    <option value="monochrome-dark">Monochrome-dark</option>
-                                    <option value="monochrome-light">Monochrome-light</option>
-                                    <option value="analogic">Analogic</option>
-                                    <option value="complement">Complement</option>
-                                    <option value="analogic-complement">Analogic-complement</option>
-                                    <option value="triad">Triad</option>
-                                    <option value="quad">Quad</option>
-                            </select>
-                            <div class="custom-arrow">
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </div>
-                        </div>
-                        <input type="submit" name="submit" id="submit" class="submit">
-                        <input type="submit" name="submit-random" value="Random" id="submit-random" class="submit">
-                    </form>
-            </header>
-        
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <form>
+                <input type="color" name="color" id="color" class="color">
+                <div class="custom-select">
+                    <select name="mode" id="mode" class="mode">
+                        <option value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome-dark</option>
+                        <option value="monochrome-light">Monochrome-light</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic-complement</option>
+                        <option value="triad">Triad</option>
+                        <option value="quad">Quad</option>
+                    </select>
+                    <div class="custom-arrow">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <input type="submit" name="submit" id="submit" class="submit">
+                <input type="submit" name="submit-random" value="Random" id="submit-random" class="submit">
+            </form>
+        </header>
+
         <div class="color-suggestions" id="color-suggestions">
             <!-- COLOR-BLOCKS -->
         </div>
-        
-        <script src="index.js"></script>
-    </body>
+
+        <script src="index.js" type="module"></script>
+</body>
+
 </html>
