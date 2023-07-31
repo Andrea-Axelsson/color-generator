@@ -15,15 +15,18 @@ function getHexValue(hexId) {
 }
 
 function copyHex(hexValue) {
-
     const hiddenInput = document.createElement('input')
     hiddenInput.setAttribute('value', hexValue)
     document.body.appendChild(hiddenInput)
     hiddenInput.select()
     document.execCommand('copy')
     document.body.removeChild(hiddenInput)
-    alert("Hex Copied")
 
+    const copyAlert = document.querySelector(".copy-alert")
+    copyAlert.classList.add('active')
+    setTimeout(() => {
+        copyAlert.classList.remove('active')
+    }, 1000)
 }
 
 
@@ -34,6 +37,7 @@ function getFeedHtml() {
         const newUuid = uuidv4()
         feedHtml += `
         <div class="color-block" data-hex="${newUuid}" id="${newUuid}">
+        <i class="fa-regular fa-copy"></i>
             <div class="hex-value">
                 <p>{colorsArray[i]}</p>
             </div>
