@@ -58,6 +58,7 @@ form {
     border-radius: 4px;
     border: 1px solid var(--gray-300, #D1D5DB);
     background: #fff;
+    cursor: pointer;
 }
 
 .color {
@@ -73,6 +74,10 @@ form {
 .submit {
     max-width: 75px;
     font-family: 'Inter', sans-serif;
+}
+
+.submit:active {
+    background-color: rgb(199, 199, 199);
 }
 
 .color-block {
